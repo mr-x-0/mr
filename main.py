@@ -133,10 +133,10 @@ print('''
 100% 
 ██████████''')
 
-  id = int(Dev_Zaid)
-  try:
-    app.send_message(id, "تم اتشغيل البوت بنجاح ✔️")
-  except:
-    pass
+id = int(Dev_Zaid)
+try:
+  app.send_message(id, "تم اتشغيل البوت بنجاح ✔️")
+except:
+  pass
 idle()
   
