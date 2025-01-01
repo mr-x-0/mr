@@ -59,14 +59,7 @@ app = Client(f'{Dev_Zaid}r3d', 21627756, 'fe77fbf0cae9f7f5ece37659e2466cf1',
   )
 # userbot = Client('userbott', 21627756, "fe77fbf0cae9f7f5ece37659e2466cf1", session_string="BACPaOQAw9EWMijb1D8m_wYGIa2r6tnaNiJDVTuC4jVktrtF5K7UxjNuZNcA-HpmEBltGr-0rUrELER9Vj0CmkNb28BdGYGETl5dJIg386wdjv3ZYNB3HkYrbhN5GFE4w2tYNv5dQJmvLTtvC3bTa0HoW64YLPINX_3BEZSoyXPm_bbXonA_2PIqeA1MHdEzfg_U4Zy75xyBq0pBvTv6xhD9hpAliXHnapJ5gg4C8Qt4QX4JLMGYxaSTNt51OClNVpPU6yiKZBFYl-t6CP66VmL3JU3P3HshrCSlcY38GfZ7Uy_w1b7HCqqe9EnVmZV0k3S29YtFlGz9Z0uuw0pxloAFpebeTwAAAABydGQqAA")
   
-if not r.get(f'{Dev_Zaid}:botkey'):
-    r.set(f'{Dev_Zaid}:botkey', '⇜')
 
-if not r.get(f'{Dev_Zaid}botname'):
-    r.set(f'{Dev_Zaid}botname', 'كارولين')
-
-if not r.get(f'{Dev_Zaid}botchannel'):
-    r.set(f'{Dev_Zaid}botname', 'SOURCEZE')
 
 def Find(text):
   m = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s!()\[\]{};:'\".,<>?«»“”‘’]))"
