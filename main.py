@@ -15,20 +15,30 @@ Loading…
 █▒▒▒▒▒▒▒▒▒''')
 print('\n\n')
 
-token = Mody.TOKEN
-Dev_Zaid = token.split(':')[0]
-
-owner_id = int(DEVV_ID)
-
-
- 
-text = 'token = "{}"\nowner_id = {}'
-www.write(text.format(token, owner_id))
+try:
+  from information import *
+  Dev_Zaid = token.split(':')[0]
+  r.set(f'{Dev_Zaid}botowner', owner_id)
+except Exception as e:
+  with open ('information.py','w+') as www:
+     token = Mdoy.TOKEN
+     Dev_Zaid = token.split(':')[0]
+     if not r.get(f'{Dev_Zaid}botowner'):
+       owner_id = int(DEVV_ID)
+       r.set(f'{Dev_Zaid}botowner', owner_id)
+     else:
+        owner_id = int(r.get(f'{Dev_Zaid}botowner'))
+     text = 'token = "{}"\nowner_id = {}'
+     www.write(text.format(token, owner_id))
 
     
 
 
-
+if not r.get(f'{Dev_Zaid}botowner'):
+    owner_id = int(DEVV_ID)
+    r.set(f'{Dev_Zaid}botowner', owner_id)
+else:
+    owner_id = int(r.get(f'{Dev_Zaid}botowner'))
 print('''
 10% 
 ███▒▒▒▒▒▒▒ ''')
