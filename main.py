@@ -132,8 +132,8 @@ print('''
 
 100% 
 ██████████''')
-if r.get(f'DevGroup:{Dev_Zaid}'):
-  id = int(r.get(f'DevGroup:{Dev_Zaid}'))
+
+  id = int(Dev_Zaid)
   try:
     app.send_message(id, "تم اتشغيل البوت بنجاح ✔️")
   except:
