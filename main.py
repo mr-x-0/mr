@@ -19,7 +19,7 @@ token = Mody.TOKEN
 Dev_Zaid = token.split(':')[0]
 
 owner_id = int(DEVV_ID)
-r.set(f'{Dev_Zaid}botowner', owner_id)
+
 
  
 text = 'token = "{}"\nowner_id = {}'
