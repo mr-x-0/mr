@@ -15,21 +15,15 @@ Loading…
 █▒▒▒▒▒▒▒▒▒''')
 print('\n\n')
 
-try:
-# from information import *
-  Dev_Zaid = token.split(':')[0]
+token = Mody.TOKEN
+Dev_Zaid = token.split(':')[0]
+if not r.get(f'{Dev_Zaid}botowner'):
+  owner_id = int(DEVV_ID)
   r.set(f'{Dev_Zaid}botowner', owner_id)
-except Exception as e:
-  with open ('information.py','w+') as www:
-     token = Mody.TOKEN
-     Dev_Zaid = token.split(':')[0]
-     if not r.get(f'{Dev_Zaid}botowner'):
-       owner_id = int(DEVV_ID)
-       r.set(f'{Dev_Zaid}botowner', owner_id)
-     else:
-        owner_id = int(r.get(f'{Dev_Zaid}botowner'))
-     text = 'token = "{}"\nowner_id = {}'
-     www.write(text.format(token, owner_id))
+else:
+  owner_id = int(r.get(f'{Dev_Zaid}botowner'))
+text = 'token = "{}"\nowner_id = {}'
+www.write(text.format(token, owner_id))
 
     
 
