@@ -14,7 +14,7 @@ print('''
 Loading…
 █▒▒▒▒▒▒▒▒▒''')
 print('\n\n')
-
+owner_id = int(DEVV_ID)
 try:
   from information import *
   Dev_Zaid = token.split(':')[0]
