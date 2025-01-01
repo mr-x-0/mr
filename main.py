@@ -16,7 +16,7 @@ Loading…
 print('\n\n')
 
 try:
-  from information import *
+# from information import *
   Dev_Zaid = token.split(':')[0]
   r.set(f'{Dev_Zaid}botowner', owner_id)
 except Exception as e:
