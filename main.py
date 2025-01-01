@@ -18,7 +18,7 @@ owner_id = int(DEVV_ID)
 try:
   from information import *
   Dev_Zaid = token.split(':')[0]
-  r.set(f'{Dev_Zaid}botowner', owner_id)
+
 except Exception as e:
   with open ('information.py','w+') as www:
      token = Mody.TOKEN
