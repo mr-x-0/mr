@@ -23,7 +23,6 @@ except Exception as e:
   with open ('information.py','w+') as www:
      token = Mody.TOKEN
      Dev_Zaid = token.split(':')[0]
-     owner_id = int(r.get(f'{Dev_Zaid}'))
      text = 'token = "{}"\nowner_id = {}'
      www.write(text.format(token, owner_id))
 
@@ -31,7 +30,7 @@ except Exception as e:
 
 
 
-owner_id = int(r.get(f'{Dev_Zaid}'))
+
 print('''
 10% 
 ███▒▒▒▒▒▒▒ ''')
